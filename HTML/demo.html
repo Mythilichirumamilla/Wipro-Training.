@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Result Demo</title>
+</head>
+<body>
+
+<h2>Student Result</h2>
+
+<script>
+    // Accept user name and marks
+    let userName = prompt("Enter your name:");
+    let marks = parseInt(prompt("Enter your marks:"));
+
+    // Determine pass / fail
+    let result;
+    if (marks >= 40) {
+        result = "Pass";
+    } else {
+        result = "Fail";
+    }
+
+    // Store subjects in an array
+    let subjects = ["Maths", "Science", "English"];
+
+    // Display result using string methods
+    let message = "hello " + userName;
+    message = message.toUpperCase();
+
+    document.write("<p>" + message + "</p>");
+    document.write("<p>Marks: " + marks + "</p>");
+    document.write("<p>Result: " + result + "</p>");
+    document.write("<p>Subjects: " + subjects.join(", ") + "</p>");
+</script>
+
+</body>
+</html>
